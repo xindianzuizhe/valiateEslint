@@ -1,0 +1,13 @@
+root = true
+ 
+[*]
+# 文件字符编码
+charset = utf-8
+# 缩进样式
+indent_style = space
+# 缩进大小
+indent_size = 2
+# 行结束文件格式 \n（或lf换行）和\r\n（或crlf用于回车+换行）lf是linux和Unix系统的换行符，crlf是window 系统的换行符
+end_of_line = crlf
+# 是否应该以换行符结尾
+insert_final_newline = true
