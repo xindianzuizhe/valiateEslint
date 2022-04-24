@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "c": "git add . && git-cz && git push",
+    "c": "git add . && git-cz",
     "lint": "eslint --fix --ext .js,.vue src"
   },
   "dependencies": {
