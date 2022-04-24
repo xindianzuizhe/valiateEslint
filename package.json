@@ -5,10 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "prepare": "husky install",
-    "lint": "eslint ./src/**/*.{js,vue} --fix",
-    "commit": "git-cz"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@commitlint/cli": "^16.2.3",
@@ -37,16 +34,13 @@
     "vite-plugin-eslint": "^1.5.2",
     "vite-plugin-mock": "^2.9.6"
   },
-  "lint-staged": {
-    "*.{js,vue}": [
-      "prettier --write",
-      "eslint --fix",
+  "gitHooks":{
+    "pre-commit":"lint-staged"
+  },
+  "lint-staged":{
+    "src/**":[
+      "prettier --config .prettierrc.js --write",
       "git add"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
